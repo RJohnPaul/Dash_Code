@@ -150,6 +150,9 @@ export default function Home() {
 
   return (
     <div className="bg-black text-white min-h-screen p-4 md:p-6 lg:p-8">
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-2xl md:text-3xl font-semibold">Dashboard</h1>
+      </div>
       <div className="inline-flex flex-col items-center gap-14 relative">
         <div className="inline-flex flex-col  gap-[50px] relative ">
           <div className="inline-flex items-center gap-[30px] relative">
