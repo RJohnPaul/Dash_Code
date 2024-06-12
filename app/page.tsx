@@ -150,11 +150,14 @@ export default function Home() {
 
   return (
     <div className="bg-black text-white min-h-screen p-4 md:p-6 lg:p-8">
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-2xl md:text-3xl font-semibold">Dashboard</h1>
+      </div>
       <div className="inline-flex flex-col items-center gap-14 relative">
         <div className="inline-flex flex-col  gap-[50px] relative ">
           <div className="inline-flex items-center gap-[30px] relative">
             <div className="flex flex-col w-[669px] h-[642px] items-start gap-[11px] relative">
-              <div className="relative w-[669px] h-[448px] bg-black rounded-[20px] border border-solid border-[#b2b2b2]">
+              <div className="relative w-[669px] h-[426px] bg-black rounded-[20px] border border-solid border-[#b2b2b2]">
                 <MapContainer
                   center={[position[0], position[1]]}
                   zoom={13}
@@ -170,7 +173,7 @@ export default function Home() {
                   />
                 </MapContainer>
               </div>
-              <div className="relative w-[669px] h-[183px] bg-black rounded-[15px] border border-solid border-[#bfbfbf]">
+              <div className="relative w-[669px] h-[170px] bg-black rounded-[15px] border border-solid border-[#bfbfbf]">
                 {" "}
                 <Card className="bg-black  rounded-lg">
                   <CardHeader>
@@ -243,7 +246,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-wrap w-[677px] items-start gap-[30px_30px] relative">
-              <div className="relative w-[321px] h-[311px]  bg-black rounded-[20px] ">
+              <div className="relative w-[321px] h-[311px] bg-black rounded-[20px] ">
                 <Card className="bg-black">
                   <CardHeader>
                     <CardTitle className="text-sm md:text-base text-white">
@@ -256,7 +259,7 @@ export default function Home() {
                         htmlFor="pressure-water"
                         className="text-sm md:text-base text-white"
                       >
-                        Amount of Water
+                        Amount of Water (L)
                       </Label>
                       <Input
                         id="pressure-water"
@@ -273,7 +276,7 @@ export default function Home() {
                         htmlFor="pressure-required"
                         className="text-sm md:text-base text-white"
                       >
-                        Pressure Required
+                        Pressure Required (Pa)
                       </Label>
                       <Input
                         id="pressure-required"
@@ -339,7 +342,7 @@ export default function Home() {
                         htmlFor="solar-area"
                         className="text-sm md:text-base text-white"
                       >
-                        Net Area of Solar Panels
+                        Net Area of Solar Panels (m²)
                       </Label>
                       <Input
                         id="solar-area"
@@ -356,7 +359,7 @@ export default function Home() {
                         htmlFor="solar-efficiency"
                         className="text-sm md:text-base text-white"
                       >
-                        Solar Panel Efficiency
+                        Solar Panel Efficiency (%)
                       </Label>
                       <Input
                         id="solar-efficiency"
@@ -419,7 +422,7 @@ export default function Home() {
                         htmlFor="distribution-area"
                         className="text-sm md:text-base text-white"
                       >
-                        Area of Distribution
+                        Area of Distribution (m²)
                       </Label>
                       <Input
                         id="distribution-area"
@@ -436,7 +439,7 @@ export default function Home() {
                         htmlFor="distribution-depth"
                         className="text-sm md:text-base text-white"
                       >
-                        Depth of Distribution
+                        Depth of Distribution (m)
                       </Label>
                       <Input
                         id="distribution-depth"
@@ -502,7 +505,7 @@ export default function Home() {
                         htmlFor="amount-water"
                         className="text-sm md:text-base text-white"
                       >
-                        Amount of Water
+                        Amount of Water (L)
                       </Label>
                       <Input
                         id="amount-water"
@@ -514,13 +517,12 @@ export default function Home() {
                           })
                         }
                         className="text-white bg-black"
-                      ></Input>
-
+                      />
                       <Label
                         htmlFor="lifting-height"
                         className="text-sm md:text-base text-white"
                       >
-                        Lifting Height
+                        Lifting Height (m)
                       </Label>
                       <Input
                         id="lifting-height"
